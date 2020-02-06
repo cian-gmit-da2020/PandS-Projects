@@ -1,5 +1,5 @@
-# Cian Hogan
-# Take an input string and output every second letter in reverse order
+# Cian Hogan week 3 task
+# Take an input string and outputs every second letter in reverse order
 
 # Takes input from user
 string = input("Enter a sentence here: ")

@@ -1,4 +1,4 @@
-# week 4 task
+# Cian Hogan week 4 task
 # take input and in its even divide by 2 if its odd muliply by 3 and add one
 
 # make sure the program doesnt crash if user enters an invalid response
