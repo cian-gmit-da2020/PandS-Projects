@@ -19,5 +19,5 @@ try:
 	else: # print out for input of negative number	
 		print(num, "Doesn't look like a positive whole number ")
 
-except: # print out for input error
+except: # print out for user input error
 	print("Are you sure you entered a whole number? Try again")
