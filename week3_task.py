@@ -4,9 +4,5 @@
 # Takes input from user
 string = input("Enter a sentence here: ")
 
-# reverses the input
-revstring = string[len(string)::-1]
-
-# prints every second char of revstring
-print(revstring[0::2])
-
+# print the string stepping backwards in 2 steps at a time
+print(string[::-2])
