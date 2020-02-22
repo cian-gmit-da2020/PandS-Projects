@@ -4,20 +4,26 @@
 
 # define the function
 def sqroot(x):
-	count = 1 # set a iterator variable
+	x = float(x)
+	count = 1.0 # set a iterator variable
 	# loop to find closest square number to input x
 	# keep adding 1 to count until count squared is bigger than x
-	while True: 
-		if count * count < x:
-			count = count + 1
-	# When count squared is greater than x jump out of loop
-		elif count * count > x:
+	while True:
+	# if count squared = x break the loop
+		if count * count == x:
+			root = count
 			break
-	# find x diveded by the squares closest but greater and less than x
-	low = x / (count - 1)
-	high = x / (count)
+	# if count squared less than x increase x by 1
+		elif count * count < x:
+			count = count + 1
+	# When count squared is greater than x estimate square root
+		elif count * count >= x:
+	# find x divided by the squares closest but greater and less than x
+			low = x / (count - 1)
+			high = x / (count)
 	# find the avegrage of above as estimate square root
-	root = (low + high) / 2
+			root = (low + high) / 2
+			break
 	# return square root
 	return root
 
