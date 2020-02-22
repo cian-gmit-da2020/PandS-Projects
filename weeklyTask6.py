@@ -23,6 +23,10 @@ def sqroot(x):
 			high = x / (count)
 	# find the avegrage of above as estimate square root
 			root = (low + high) / 2
+			# newtons formula for square root
+			while round(root*root, 2) != x:
+				root = (1/2) * (root + (x/root))
+				break
 			break
 	# return square root
 	return root
