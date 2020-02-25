@@ -3,7 +3,7 @@
 
 import sys
 
-# convert command line argument to string
+# convert final command line argument to string
 fname = str(sys.argv[-1])
 
 # open file in read mode
@@ -13,7 +13,7 @@ f = open(fname, 'r')
 lines = f.readlines()
 # set iterator to 0
 count = 0
-# for line in list lines check each letter
+# for line in the list lines check each letter
 for line in lines:
 	# for each character in the line string check if it is 'e'
 	for char in line:
@@ -21,5 +21,8 @@ for line in lines:
 		if char == "e": # or char == "E":
 			count += 1
 
-# print results script
+# close file f
+f.close()
+
+# print results of script
 print("There are", count, "e's in", fname)
