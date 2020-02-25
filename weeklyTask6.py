@@ -17,7 +17,7 @@ def sqroot(x):
 		elif count * count < x:
 			count = count + 1
 	# When count squared is greater than x estimate square root
-		elif count * count >= x:
+		elif count * count > x:
 	# find x divided by the squares closest but greater and less than x
 			low = x / (count - 1)
 			high = x / (count)
@@ -26,7 +26,7 @@ def sqroot(x):
 			# newtons formula for square root
 			while round(root*root, 2) != x:
 				root = (1/2) * (root + (x/root))
-				break
+				
 			break
 	# return square root
 	return root
