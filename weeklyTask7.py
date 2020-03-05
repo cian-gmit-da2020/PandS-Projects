@@ -1,28 +1,30 @@
 # Cian Hogan Week 7 task
 # import sys module
-
 import sys
 
 # convert final command line argument to string
-fname = str(sys.argv[-1])
+fname = str(sys.argv[1]) 
+# set default check for letter e
+letter = "e"
+
+# if user enters an extra argument search for that letter instead
+if len(sys.argv) == 3:
+	# check the extra argument is a single character
+	if len(sys.argv[2]) == 1:
+		letter = str(sys.argv[2])
 
 # open file in read mode
-f = open(fname, 'r')
-
-# convert the file to a list of lines
-lines = f.readlines()
-# set iterator to 0
-count = 0
-# for line in the list lines check each letter
-for line in lines:
-	# for each character in the line string check if it is 'e'
-	for char in line:
-	# if its e increment count by 1
-		if char == "e": # or char == "E":
-			count += 1
-
-# close file f
+with open(fname, 'r') as f:
+	count = 0
+	for line in f:
+	# iterate through each character in the line
+		for char in line:
+	# if the char is a match increment count by 1
+			if char == letter:
+				count += 1
+# close file
 f.close()
 
 # print results of script
-print("There are", count, "e's in", fname)
+print("There are %d letter %s's in %s." % (count, letter, fname))
+
