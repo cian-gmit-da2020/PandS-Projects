@@ -42,7 +42,7 @@ Table of contents
 # weeklyTask6.py
 
 - This programme defines a funtion **sroot()** for estimating the square root of any positive number
-- The programme uses an infinite loop with break statments that end the loop at certain points when certin conditions have been met
+- The programme uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
 - First the function finds the closest whole root number to the input value
 - Then the function uses newtowns square root method to get a much closer approximation of the square root value and returns that value ending the fuction
 - The programme then asks the user for an input value to calculate the square root of, variable **i**
@@ -52,7 +52,7 @@ Table of contents
 # weeklyTask7.py, also includes mobydick.txt
 
 - This programme uses command line arguments to open and read a file and return a count of characters in the file
-- The programme uses imports the sys module and uses the fuction argv to access the command line arguments
+- The programme imports the sys module and uses the fuction argv to access the command line arguments
 - The programme assigns the second command line argument as the string value to use for the filename
 - The programme sets the search variable **letter** to default **e**
 - The programme checks to see if the user has entered a third command line argument and if that argument is a single charachter then it updates the search letter variable to the argument
