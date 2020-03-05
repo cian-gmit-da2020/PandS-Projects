@@ -56,7 +56,7 @@ Table of contents
 - The programme assigns the second command line argument as the string value to use for the filename
 - The programme sets the search variable **letter** to default **e**
 - The programme checks to see if the user has entered a third command line argument and if that argument is a single charachter then it updates the search letter variable to the argument
-- Using a with block, the prgramme opens the file **fname** and iterates over every character in each line counting how many times **letter** appears
+- Using a **with** block, the prgramme opens the file **fname** and iterates over every character in each line counting how many times **letter** appears
 - Finally the program prints a formatted string to the screen containing the results of the search
 
 
