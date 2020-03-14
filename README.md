@@ -5,11 +5,11 @@
 
 Table of contents
 1. bmiCalc.py
-2. week3Task.py
-3. weeklyTask4.py
-4. weeklyTask5.py
-5. weeklyTask6.py
-6. weeklyTask7.py
+2. revString.py
+3. collatz.py
+4. weekday.py
+5. sqroot.py
+6. letterCount.py
 
 # bmiCalc.py, BMI calculator
 
@@ -17,12 +17,12 @@ Table of contents
 - The programme then applys a standard bmi formula to those variables and stores that value in the variable **bmi**
 - The programme finishes by printing a message to the screen which includes the value bmi rounded to two decimal places
 
-# week3Task.py
+# revString.py
 
 - This programme takes a string input from the user.
 - Using string slicing and a print statement the programme prints the string to the screen stepping backwards through the string two characters at a time
 
-# weeklyTask4.py
+# collatz.py
 
 - This programme takes an input from the user of a positive number and performs a calculation on that number until it reaches one.
 - The programme performs a different calculation whether the number is even or odd.
@@ -31,7 +31,7 @@ Table of contents
 - A while loop ensures the programme will continue to run provided the number remains not equal to one.
 - The programme then checks for odd or evenness and applies the correct action to the number depending on the result.
 
-# weeklyTask5.py
+# weekday.py
 
 - This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.
 - The programme begins by importing the **datetime** module
@@ -39,7 +39,7 @@ Table of contents
 - A list of all the days in order is created
 - The programme checks the index of today to determine if its a weekday or not and prints an appropriate message depending on the result
 
-# weeklyTask6.py
+# sqroot.py
 
 - This programme defines a funtion **sroot()** for estimating the square root of any positive number
 - The programme uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
@@ -49,7 +49,7 @@ Table of contents
 - Then the programme calls the function of the variable i and stores the result in the variable **iroot**
 - The programme then prints the value of iroot rounded to 2 decimal points.
 
-# weeklyTask7.py, also includes mobydick.txt
+# letterCount.py, also includes mobydick.txt
 
 - This programme uses command line arguments to open and read a file and return a count of characters in the file
 - The programme imports the sys module and uses the fuction argv to access the command line arguments
