@@ -22,8 +22,7 @@ with open(fname, 'r') as f:
 	# if the char is a match increment count by 1
 			if char == letter:
 				count += 1
-# close file
-f.close()
+
 
 # print results of script
 print("There are %d letter %s's in %s." % (count, letter, fname))
