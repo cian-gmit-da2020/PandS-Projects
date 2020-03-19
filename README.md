@@ -59,12 +59,16 @@ Table of contents
 - Using a **with** block, the prgramme opens the file **fname** and iterates over every character in each line counting how many times **letter** appears
 - Finally the program prints a formatted string to the screen containing the results of the search
 
+# plotty.py
 
-
-
-
-
-
+- This programme plots 3 seperate functions on a single plot
+- **f(x) = x**, **g(x) = x(squared)** and **h(x) = x(cubed)**
+- The programme starts by importing the numpy and matplotlib's pyplot module
+- Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**
+- using linspace allows for a smoother graph that more accurately mirrors the actual function
+- The programme creates 3 seperate plots, one for each function and assigns a colour and label to each plot
+- The programme adds a label to the x & y axis, a legend and a title for the plot
+- The plt.show() method displays the plot to the screen 
 
 
 

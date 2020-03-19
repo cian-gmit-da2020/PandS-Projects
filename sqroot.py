@@ -1,6 +1,7 @@
 # Cian Hogan
 # create a function that estimates the square root, cont.. 
 # of a positive input, rough estimate using division
+# Newtons Formula link https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf
 
 # define the function
 def sqroot(x):
@@ -32,11 +33,15 @@ def sqroot(x):
 	return root
 
 # Get input from the user, convert to float
-i = float(input("Please enter a positive number: "))
+try:
+	i = float(input("Please enter a positive number: "))
 
-# use new function on input
-iroot = sqroot(i)
+	# use new function on input
+	iroot = sqroot(i)
 
-# print result of funtion, rounded to 2 decimals
-print("The square root of", i, "is approx.", round(iroot, 1))
+	# print result of funtion, rounded to 2 decimals
+	print("The square root of", i, "is approx.", round(iroot, 1))
 
+# Print an error message if the user entered an incorrect value 
+except ValueError:
+	print("Are you sure you entered a positive number? Try again")
