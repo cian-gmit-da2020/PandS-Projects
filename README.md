@@ -10,6 +10,7 @@ Table of contents
 4. weekday.py
 5. sqroot.py
 6. letterCount.py
+7. plotty.py
 
 # bmiCalc.py, BMI calculator
 
@@ -68,8 +69,4 @@ Table of contents
 - using linspace allows for a smoother graph that more accurately mirrors the actual function
 - The programme creates 3 seperate plots, one for each function and assigns a colour and label to each plot
 - The programme adds a label to the x & y axis, a legend and a title for the plot
-- The plt.show() method displays the plot to the screen 
-
-
-
-
+- The **plt.show()** method displays the plot to the screen 
