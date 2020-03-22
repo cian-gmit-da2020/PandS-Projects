@@ -2,7 +2,7 @@
 # BMI = Weight(KG)/(Height(m)**2
 # https://en.wikipedia.org/wiki/Body_mass_index
 
-# Get input from user
+# Get input from user, checking that the input type is correct
 try:
 	weight = float(input("What is your weight in Kilograms(KG): "))
 	height = float(input("What is your height in Meters(M): "))
@@ -27,6 +27,7 @@ try:
 		print("You have a BMI of ", round(bmi, 2))
 		print("That would be considered obese")
 
+# Print out if user enters incorrect input
 except ValueError:
 	print("Are you sure you entered correct values for height and weight?")
 	print("Please try again")
