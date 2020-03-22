@@ -10,6 +10,7 @@ Table of contents
 4. weekday.py
 5. sqroot.py
 6. letterCount.py
+7. plotty.py
 
 # bmiCalc.py, BMI calculator
 
@@ -44,7 +45,7 @@ Table of contents
 - This programme defines a funtion **sroot()** for estimating the square root of any positive number
 - The programme uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
 - First the function finds the closest whole root number to the input value
-- Then the function uses [newtowns square root method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf) to get a much closer approximation of the square root value and returns that value ending the fuction
+- Then the function uses [newtons square root method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf) to get a much closer approximation of the square root value and returns that value ending the fuction
 - The programme then asks the user for an input value to calculate the square root of, variable **i**
 - Then the programme calls the function of the variable i and stores the result in the variable **iroot**
 - The programme then prints the value of iroot rounded to 2 decimal points.
@@ -68,8 +69,4 @@ Table of contents
 - using linspace allows for a smoother graph that more accurately mirrors the actual function
 - The programme creates 3 seperate plots, one for each function and assigns a colour and label to each plot
 - The programme adds a label to the x & y axis, a legend and a title for the plot
-- The plt.show() method displays the plot to the screen 
-
-
-
-
+- The **plt.show()** method displays the plot to the screen 
