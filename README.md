@@ -12,18 +12,18 @@ Table of contents
 6. letterCount.py
 7. plotty.py
 
-# bmiCalc.py, BMI calculator
+# 1. bmiCalc.py, BMI calculator
 
 - This programme takes an input from the user and assigns those values to the variables **height and weight**.
 - The programme then applys a standard bmi formula to those variables and stores that value in the variable **bmi**
 - The programme finishes by printing a message to the screen which includes the value bmi rounded to two decimal places
 
-# revString.py
+# 2. revString.py
 
 - This programme takes a string input from the user.
 - Using string slicing and a print statement the programme prints the string to the screen stepping backwards through the string two characters at a time
 
-# collatz.py
+# 3. collatz.py
 
 - This programme takes an input from the user of a positive number and performs a calculation on that number until it reaches one.
 - The programme performs a different calculation whether the number is even or odd.
@@ -32,7 +32,7 @@ Table of contents
 - A while loop ensures the programme will continue to run provided the number remains not equal to one.
 - The programme then checks for odd or evenness and applies the correct action to the number depending on the result.
 
-# weekday.py
+# 4. weekday.py
 
 - This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.
 - The programme begins by importing the **datetime** module
@@ -40,7 +40,7 @@ Table of contents
 - A list of all the days in order is created
 - The programme checks the index of today to determine if its a weekday or not and prints an appropriate message depending on the result
 
-# sqroot.py
+# 5. sqroot.py
 
 - This programme defines a funtion **sroot()** for estimating the square root of any positive number
 - The programme uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
@@ -50,7 +50,7 @@ Table of contents
 - Then the programme calls the function of the variable i and stores the result in the variable **iroot**
 - The programme then prints the value of iroot rounded to 2 decimal points.
 
-# letterCount.py, also includes mobydick.txt
+# 6. letterCount.py, also includes mobydick.txt
 
 - This programme uses command line arguments to open and read a file and return a count of characters in the file
 - The programme imports the sys module and uses the fuction argv to access the command line arguments
@@ -60,10 +60,10 @@ Table of contents
 - Using a **with** block, the prgramme opens the file **fname** and iterates over every character in each line counting how many times **letter** appears
 - Finally the program prints a formatted string to the screen containing the results of the search
 
-# plotty.py
+# 7. plotty.py
 
 - This programme plots 3 seperate functions on a single plot
-- **f(x) = x**, **g(x) = x(squared)** and **h(x) = x(cubed)**
+- $**f(x) = x**, **g(x) = x^2** and **h(x) = x^3**$
 - The programme starts by importing the numpy and matplotlib's pyplot module
 - Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**
 - using linspace allows for a smoother graph that more accurately mirrors the actual function
