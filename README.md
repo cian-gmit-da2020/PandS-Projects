@@ -46,7 +46,7 @@ Table of contents
 - The programme uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
 - First the function finds the closest whole root number to the input value
 - Then the function uses [newtons square root method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf) to get a much closer approximation of the square root value and returns that value ending the fuction
-<img src="https://render.githubusercontent.com/render/math?math=x_n\+1 = \frac{1}{2}(x_n \+ \frac{a}{x_n})">
+<img src="https://render.githubusercontent.com/render/math?math= x_n\+1 = \frac{1}{2}(x_n \+ \frac{a}{x_n})">
 - The programme then asks the user for an input value to calculate the square root of, variable **i**
 - Then the programme calls the function of the variable i and stores the result in the variable **iroot**
 - The programme then prints the value of iroot rounded to 2 decimal points.
@@ -61,7 +61,7 @@ Table of contents
 - Using a **with** block, the prgramme opens the file **fname** and iterates over every character in each line counting how many times **letter** appears
 - Finally the program prints a formatted string to the screen containing the results of the search
 
-# 7. plotty.py
+# 7. plotty.py 
 
 - This programme plots 3 seperate functions on a single plot
 - **f(x) = x**, **g(x) = x<sup>2</sup>** and **h(x) = x<sup>3</sup>**
