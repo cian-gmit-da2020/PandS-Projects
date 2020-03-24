@@ -14,41 +14,70 @@ Table of contents
 
 # 1. bmiCalc.py, BMI calculator
 
-- This programme takes an input from the user and assigns those values to the variables **height and weight**.
-- The programme then applys a standard bmi formula to those variables and stores that value in the variable **bmi**
-- The programme finishes by printing a message to the screen which includes the value bmi rounded to two decimal places
+[BMI wiki](https://en.wikipedia.org/wiki/Body_mass_index)    
+<img src="https://render.githubusercontent.com/render/math?math=BMI = \frac{weight}{height^2}">
+
+*bmiCalc.py takes inputs from the user of their height in Meters and weight in Kilograms and calculates their BMI score and returns the result*
+
+- The programme begins by defining a function called checkBMI which takes a single input of a number and returns a different message depending on the value of the input.
+- These messages correspond to the different classifications of BMI (underweight, normal, overwieght and obese).
+- The programme implements a try/except code block to ensure inputs numerical values for height and weight.
+- If the input is incorrect (for example if the user passes a word in) the exception will tell the user why it has failed.
+- Then the programme takes an input from the user and assigns those values to the variables **height and weight**.
+- The programme then applys the standard bmi formula shown above to those variables and stores that value in the variable **bmi**
+- The variable bmi is the passed to the fundtion checkBmi which prints out its result.
 
 # 2. revString.py
 
-- This programme takes a string input from the user.
+*revString.py takes an input of a sentence of any length from the user and prints every second character of that sentence back to the screen in reverse *
+
+- This programme takes a string input from the user and stores it in the variable **string**.
 - Using string slicing and a print statement the programme prints the string to the screen stepping backwards through the string two characters at a time
 
 # 3. collatz.py
+[Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
 
-- This programme takes an input from the user of a positive number and performs a calculation on that number until it reaches one.
-- The programme performs a different calculation whether the number is even or odd.
-- First a try/except block is placed which will print a message to the screen if the user does not enter a number value as their input.
-- Next the programme checks to ensure that the user has entered a positive number and will return a message if they have not.
+*collatz.py takes an input of any positive interger from the user and performs the collatz process (linked above) of dividing the value by two if it is **even** but if the value is **odd**, multiplying it by three and adding one. As the process executes the programme prints each new value to the screen until it reaches 1 and the programme finishes* 
+
+- The programme starts with a try/except block to make sure the user enters a correct interger value. If the value is not an interger the programme prints an exception message to the screen.
+- The programme then takes an input from the user and then checks to make sure it is a positive number, If the number is negative a message will print to the screen and the programme will end.
+- The original value is printed to the screen before any calculations are done. The print statement uses a second argumanet **end=" "** so the programme will not automatically insert newline chrachters and instead will print all values on the same line.
+- The programme then performs a different calculation whether the number is even or odd.
 - A while loop ensures the programme will continue to run provided the number remains not equal to one.
 - The programme then checks for odd or evenness and applies the correct action to the number depending on the result.
+- At the end of each loop the updated value in printed to the screen, again using the **end=" "** argument.
+- The programme ends when the value reaches 1.
 
 # 4. weekday.py
 
-- This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.
-- The programme begins by importing the **datetime** module
-- The programme creates a variable for todays day index using datetimes **now() and weekday()** methods
-- A list of all the days in order is created
-- The programme checks the index of today to determine if its a weekday or not and prints an appropriate message depending on the result
+* This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.*
+
+- The programme begins by importing the **datetime** module.
+- The programme creates a variable for todays day index using datetime's **now() and weekday()** methods.
+- A list of all the days in order is created.
+- The programme checks the index of today to determine if its a weekday or not and prints an appropriate message depending on the result.
 
 # 5. sqroot.py
-
-- This programme defines a funtion **sroot()** for estimating the square root of any positive number
-- The programme uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
-- First the function finds the closest whole root number to the input value
-- Then the function uses [newtons square root method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf) to get a much closer approximation of the square root value and returns that value ending the fuction
+[newtons square root method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf)
 <img src="https://github.com/cian-gmit-da2020/PandS-Weekly-Projects/blob/master/Square%20root%20equation.png?raw=true">
-- The programme then asks the user for an input value to calculate the square root of, variable **i**
-- Then the programme calls the function of the variable i and stores the result in the variable **iroot**
+
+*sqroot.py takes any floating point number as an input and calculates an approximation of that input value's square root. Then it prints that square root value to the screen, rounded to 2 decimal points.*
+
+- This programme starts by defining a funtion **sroot()** with input variable **X**. The function the estimates the square root of the input **X**
+- The function uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
+- First the function finds the closest whole root number to the input value.
+- The function initialises a counter variable named **count**.
+- The function checks in count<sup>2</sup> is equal to x, if it is then count is the square root of X and the function is complete.
+- If count is not the square root of X the function checks if count<sup>2</sup> is less than X. If count<sup>2</sup> is less than X, count is incremented by 1 and the loop repeats.
+- If count<sup>2</sup> is greater than X then we know the square root of X is between count and count - 1.
+- The value of count is assigned to the variable **root**.
+- A while loop ensure that the next section of code will continue until root<sup>2</sup> is equal to X, *within two decimal places*.
+- Then the function uses Newton's square root method, above, to get a much closer approximation of the square root value and returns that value ending the fuction
+
+- The second half of the programme takes input from the user and returns a square root value.
+- The programme starts with a try/except block to make sure the user enters a correct numerical value. If the value is not a number the programme prints an exception message to the screen.
+- The programme asks the user for an input value to calculate the square root of, and assigns it to the variable **i**
+- Then the programme calls the function sqroot on the variable i and stores the result in the variable **iroot**
 - The programme then prints the value of iroot rounded to 2 decimal points.
 
 # 6. letterCount.py, also includes mobydick.txt
