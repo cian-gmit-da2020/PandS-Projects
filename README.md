@@ -63,7 +63,7 @@ Table of contents
 # 7. plotty.py
 
 - This programme plots 3 seperate functions on a single plot
-- $**f(x) = x**, **g(x) = x^2** and **h(x) = x^3**$
+- **f(x) = x**, **g(x) = x<sup>2</sup>** and **h(x) = x<sup>3</sup>**
 - The programme starts by importing the numpy and matplotlib's pyplot module
 - Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**
 - using linspace allows for a smoother graph that more accurately mirrors the actual function
