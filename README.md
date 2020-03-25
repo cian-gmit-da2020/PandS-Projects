@@ -63,7 +63,7 @@ Table of contents
 
 *sqroot.py takes any floating point number as an input and calculates an approximation of that input value's square root. Then it prints that square root value to the screen, rounded to 2 decimal points.*
 
-- This programme starts by defining a funtion **sroot()** with input variable **X**. The function the estimates the square root of the input **X**
+- This programme starts by defining a funtion **sroot()** with input variable **X**. The function the estimates the square root of the input **X**.
 - The function uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
 - First the function finds the closest whole root number to the input value.
 - The function initialises a counter variable named **count**.
@@ -72,8 +72,7 @@ Table of contents
 - If count<sup>2</sup> is greater than X then we know the square root of X is between count and count - 1.
 - The value of count is assigned to the variable **root**.
 - A while loop ensure that the next section of code will continue until root<sup>2</sup> is equal to X, *within two decimal places*.
-- Then the function uses Newton's square root method, above, to get a much closer approximation of the square root value and returns that value ending the fuction
-
+- Then the function uses Newton's square root method, above, to get a much closer approximation of the square root value and returns that value ending the fuction.
 - The second half of the programme takes input from the user and returns a square root value.
 - The programme starts with a try/except block to make sure the user enters a correct numerical value. If the value is not a number the programme prints an exception message to the screen.
 - The programme asks the user for an input value to calculate the square root of, and assigns it to the variable **i**
@@ -98,7 +97,6 @@ Table of contents
 
 *This programme plots 3 seperate functions of **X** on a single plot.*
 **f(x) = x**, **g(x) = x<sup>2</sup>** and **h(x) = x<sup>3</sup>**
-
 
 - The programme starts by importing the **numpy** and **matplotlib's pyplot** modules.
 - Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**.
