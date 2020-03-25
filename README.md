@@ -29,7 +29,7 @@ Table of contents
 
 # 2. revString.py
 
-*revString.py takes an input of a sentence of any length from the user and prints every second character of that sentence back to the screen in reverse *
+*revString.py takes an input of a sentence of any length from the user and prints every second character of that sentence back to the screen in reverse*
 
 - This programme takes a string input from the user and stores it in the variable **string**.
 - Using string slicing and a print statement the programme prints the string to the screen stepping backwards through the string two characters at a time
@@ -50,7 +50,7 @@ Table of contents
 
 # 4. weekday.py
 
-* This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.*
+*This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.*
 
 - The programme begins by importing the **datetime** module.
 - The programme creates a variable for todays day index using datetime's **now() and weekday()** methods.
@@ -81,22 +81,30 @@ Table of contents
 - The programme then prints the value of iroot rounded to 2 decimal points.
 
 # 6. letterCount.py, also includes mobydick.txt
+[Moby Dick Text File](https://www.gutenberg.org/files/2701/old/moby10b.txt)
 
-- This programme uses command line arguments to open and read a file and return a count of characters in the file
-- The programme imports the sys module and uses the fuction argv to access the command line arguments
-- The programme assigns the second command line argument as the string value to use for the filename
-- The programme sets the search variable **letter** to default **e**
-- The programme checks to see if the user has entered a third command line argument and if that argument is a single charachter then it updates the search letter variable to the argument
-- Using a **with** block, the prgramme opens the file **fname** and iterates over every character in each line counting how many times **letter** appears
-- Finally the program prints a formatted string to the screen containing the results of the search
+*This programme uses command line arguments to open and read a file and return a count of characters in the file.*
+
+- The programme starts by importing the **sys** module.
+- The programme uses a **try/except** block to make sure to check the users arguments are correct. If the user doesn't enter enough arguments for the programme to function a specific message will print to the screen. If there are enough arguments but there is any issues with the filename or the file doesn't exist a specific message will print to the screen. 
+- The next a variable **fname** is initiallised and it is assigned the string value of the second item in the list **sys.argv** as its value.
+- The programme sets the search variable **letter** to default **e**.
+- The programme checks to see if the user has entered a third command line argument and if that argument is a single charachter then it updates the search letter variable to the third argument.
+- Using a **with** block, the programme opens the file **fname**. A counter variable **count** is initiallised and its value set to 0.
+- The programme then iterates over every character in each line. If the value in **letter** appears, the count is incremented by 1.
+- When the programme has gone through the entire file it prints a formatted string to the screen containing the results of the search.
 
 # 7. plotty.py 
 
-- This programme plots 3 seperate functions on a single plot
-- **f(x) = x**, **g(x) = x<sup>2</sup>** and **h(x) = x<sup>3</sup>**
-- The programme starts by importing the numpy and matplotlib's pyplot module
-- Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**
-- using linspace allows for a smoother graph that more accurately mirrors the actual function
-- The programme creates 3 seperate plots, one for each function and assigns a colour and label to each plot
-- The programme adds a label to the x & y axis, a legend and a title for the plot
-- The **plt.show()** method displays the plot to the screen 
+*This programme plots 3 seperate functions of **X** on a single plot.*
+**f(x) = x**, **g(x) = x<sup>2</sup>** and **h(x) = x<sup>3</sup>**
+
+
+- The programme starts by importing the **numpy** and **matplotlib's pyplot** modules.
+- Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**.
+- Using linspace allows for a smoother graph that more accurately mirrors the actual functions.
+- Using pyplot method **subplots()** the programme intiiallises the variables **fig and ax** which are the plot **Figure and Axes objects**. 
+- The programme creates 3 seperate line plots on the same Axes, ax. One plot for each function f(x),g(x) and h(x) and assigns a colour and label to each plot.
+- The programme adds a label to the x & y axis, a legend, a grid and a title for the plot ax.
+- The **fig.show()** method displays the plot to the screen.
+- A final **input()** call is added to keep the programme running while the plot is displayed on the screen. The programme will only close if the user enters an input to the command line.
