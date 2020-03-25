@@ -3,32 +3,27 @@
 # of a positive input, rough estimate using division
 # Newtons Formula link https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf
 
-# define the function
+# define the function for estimating square root
 def sqroot(x):
 	x = float(x)
-	count = 1.0 # set a iterator variable
+	count = 1.0 # set an iterator variable
 	# loop to find closest square number to input x
 	# keep adding 1 to count until count squared is bigger than x
 	while True:
 	# if count squared = x break the loop
 		if count * count == x:
 			root = count
-			break
+			break # from while true loop
 	# if count squared less than x increase x by 1
 		elif count * count < x:
 			count = count + 1
 	# When count squared is greater than x estimate square root
 		elif count * count > x:
-	# find x divided by the squares closest but greater and less than x
-			low = x / (count - 1)
-			high = x / (count)
-	# find the avegrage of above as estimate square root
-			root = (low + high) / 2
+			root = count
 			# newtons formula for square root
 			while round(root*root, 2) != x:
-				root = (1/2) * (root + (x/root))
-				
-			break
+				root = (1/2) * (root + (x/root))			
+			break # break from trie loop when root**2 = input value X
 	# return square root
 	return root
 
@@ -38,9 +33,8 @@ try:
 
 	# use new function on input
 	iroot = sqroot(i)
-
 	# print result of funtion, rounded to 2 decimals
-	print("The square root of", i, "is approx.", round(iroot, 1))
+	print("The square root of", i, "is approx.", round(iroot, 2))
 
 # Print an error message if the user entered an incorrect value 
 except ValueError:

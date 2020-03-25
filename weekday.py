@@ -1,7 +1,8 @@
-# Weekly taks 5, weekday checker
+# Cian Hogan
+# Weekly task 5, weekday checker
 # import datetime module
 import datetime
-# create an object with todays day index
+# create an object with an index for todays day
 day = datetime.datetime.now().weekday()
 
 # create a list with the days of the week in order

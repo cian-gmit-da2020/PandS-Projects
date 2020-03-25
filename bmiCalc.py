@@ -2,15 +2,9 @@
 # BMI = Weight(KG)/(Height(m)**2
 # https://en.wikipedia.org/wiki/Body_mass_index
 
-# Get input from user, checking that the input type is correct
-try:
-	weight = float(input("What is your weight in Kilograms(KG): "))
-	height = float(input("What is your height in Meters(M): "))
-
-	# work out bmi score
-	bmi = weight/(height**2)
-
-	# Print out different result depending on bmi score
+# define check BMI function
+def checkBMI(bmi):
+	# Check bmi and print out different result depending on bmi score
 	if bmi < 18.5:
 		print("You have a BMI of ", round(bmi, 2))
 		print("That would be considered underweight")
@@ -26,6 +20,17 @@ try:
 	if bmi > 30:
 		print("You have a BMI of ", round(bmi, 2))
 		print("That would be considered obese")
+
+# Get input from user, checking that the input type is correct
+try:
+	weight = float(input("What is your weight in Kilograms(KG): "))
+	height = float(input("What is your height in Meters(M): "))
+
+	# work out bmi score
+	bmi = weight/(height**2)
+
+	# Print out different result depending on bmi score
+	checkBMI(bmi)
 
 # Print out if user enters incorrect input
 except ValueError:
