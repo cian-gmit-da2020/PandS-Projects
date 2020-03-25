@@ -21,7 +21,7 @@ Table of contents
 
 - The programme begins by defining a function called checkBMI which takes a single input of a number and returns a different message depending on the value of the input.
 - These messages correspond to the different classifications of BMI (underweight, normal, overwieght and obese).
-- The programme implements a try/except code block to ensure inputs numerical values for height and weight.
+- The programme implements a **try/except** code block to ensure inputs numerical values for height and weight.
 - If the input is incorrect (for example if the user passes a word in) the exception will tell the user why it has failed.
 - Then the programme takes an input from the user and assigns those values to the variables **height and weight**.
 - The programme then applys the standard bmi formula shown above to those variables and stores that value in the variable **bmi**
@@ -39,7 +39,7 @@ Table of contents
 
 *collatz.py takes an input of any positive interger from the user and performs the collatz process (linked above) of dividing the value by two if it is **even** but if the value is **odd**, multiplying it by three and adding one. As the process executes the programme prints each new value to the screen until it reaches 1 and the programme finishes* 
 
-- The programme starts with a try/except block to make sure the user enters a correct interger value. If the value is not an interger the programme prints an exception message to the screen.
+- The programme starts with a **try/except** block to make sure the user enters a correct interger value. If the value is not an interger the programme prints an exception message to the screen.
 - The programme then takes an input from the user and then checks to make sure it is a positive number, If the number is negative a message will print to the screen and the programme will end.
 - The original value is printed to the screen before any calculations are done. The print statement uses a second argumanet **end=" "** so the programme will not automatically insert newline chrachters and instead will print all values on the same line.
 - The programme then performs a different calculation whether the number is even or odd.
@@ -53,9 +53,9 @@ Table of contents
 *This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.*
 
 - The programme begins by importing the **datetime** module.
-- The programme creates a variable for todays day index using datetime's **now() and weekday()** methods.
-- A list of all the days in order is created.
-- The programme checks the index of today to determine if its a weekday or not and prints an appropriate message depending on the result.
+- The programme creates a variable **day** for todays day index using datetime's **now() and weekday()** methods.
+- A list **days** is created of all the days of the week in order Mon-Sun.
+- The programme then checks the index of today to determine if it's a weekday or not and prints an appropriate message depending on the result.
 
 # 5. sqroot.py
 [newtons square root method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf)
@@ -74,7 +74,7 @@ Table of contents
 - A while loop ensure that the next section of code will continue until root<sup>2</sup> is equal to X, *within two decimal places*.
 - Then the function uses Newton's square root method, above, to get a much closer approximation of the square root value and returns that value ending the fuction.
 - The second half of the programme takes input from the user and returns a square root value.
-- The programme starts with a try/except block to make sure the user enters a correct numerical value. If the value is not a number the programme prints an exception message to the screen.
+- The programme starts with a **try/except** block to make sure the user enters a correct numerical value. If the value is not a number the programme prints an exception message to the screen.
 - The programme asks the user for an input value to calculate the square root of, and assigns it to the variable **i**
 - Then the programme calls the function sqroot on the variable i and stores the result in the variable **iroot**
 - The programme then prints the value of iroot rounded to 2 decimal points.
