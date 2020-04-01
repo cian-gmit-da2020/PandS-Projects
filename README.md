@@ -21,7 +21,7 @@ Table of contents
 
 - The programme begins by defining a function called checkBMI which takes a single input of a number and returns a different message depending on the value of the input.
 - These messages correspond to the different classifications of BMI (underweight, normal, overweight and obese).
-- The programme implements a **try/except** code block to ensure inputs numerical values for height and weight.
+- The programme implements a **[try/except](https://docs.python.org/3/tutorial/errors.html)** code block to ensure inputs numerical values for height and weight.
 - If the input is incorrect (for example if the user passes a word in) the exception will tell the user why it has failed.
 - Then the programme takes an input from the user and assigns those values to the variables **height and weight**.
 - The programme then applies the standard bmi formula shown above to those variables and stores that value in the variable **bmi**
@@ -32,7 +32,7 @@ Table of contents
 *revString.py takes an input of a sentence of any length from the user and prints every second character of that sentence back to the screen in reverse*
 
 - This programme takes a string input from the user and stores it in the variable **string**.
-- Using string slicing and a print statement the programme prints the string to the screen stepping backwards through the string two characters at a time
+- Using **[string slicing](https://realpython.com/lessons/string-slicing/)** and a print statement the programme prints the string to the screen stepping backwards through the string two characters at a time
 
 # 3. collatz.py
 [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
@@ -101,7 +101,7 @@ Table of contents
 - The programme starts by importing the **[numpy](https://numpy.org/)** and **[matplotlib](https://matplotlib.org/)'s pyplot** modules.
 - Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**.
 - Using linspace allows for a smoother graph that more accurately mirrors the actual functions.
-- Using pyplot method **subplots()** the programme initialises the variables **fig and ax** which are the plot **Figure and Axes objects**. 
+- Using pyplot method **[subplots()](https://realpython.com/python-matplotlib-guide/)** the programme initialises the variables **fig and ax** which are the plot **Figure and Axes objects**. 
 - The programme creates 3 separate line plots on the same Axes, ax. One plot for each function f(x),g(x) and h(x) and assigns a colour and label to each plot.
 - The programme adds a label to the x & y axis, a legend, a grid and a title for the plot ax.
 - The **fig.show()** method displays the plot to the screen.
