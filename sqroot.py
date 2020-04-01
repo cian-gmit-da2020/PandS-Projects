@@ -1,6 +1,6 @@
 # Cian Hogan
 # create a function that estimates the square root, cont.. 
-# of a positive input, rough estimate using division
+# of a positive input, print the approx square root to two decimal places
 # Newtons Formula link https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf
 
 # define the function for estimating square root

@@ -29,7 +29,7 @@ try:
 	# work out bmi score
 	bmi = weight/(height**2)
 
-	# Print out different result depending on bmi score
+	# pass the bmi variable to the check bmi function to print out an appropriate message
 	checkBMI(bmi)
 
 # Print out if user enters incorrect input
