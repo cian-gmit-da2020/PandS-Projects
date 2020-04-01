@@ -20,12 +20,12 @@ Table of contents
 *bmiCalc.py takes inputs from the user of their height in Meters and weight in Kilograms and calculates their BMI score and returns the result*
 
 - The programme begins by defining a function called checkBMI which takes a single input of a number and returns a different message depending on the value of the input.
-- These messages correspond to the different classifications of BMI (underweight, normal, overwieght and obese).
+- These messages correspond to the different classifications of BMI (underweight, normal, overweight and obese).
 - The programme implements a **try/except** code block to ensure inputs numerical values for height and weight.
 - If the input is incorrect (for example if the user passes a word in) the exception will tell the user why it has failed.
 - Then the programme takes an input from the user and assigns those values to the variables **height and weight**.
-- The programme then applys the standard bmi formula shown above to those variables and stores that value in the variable **bmi**
-- The variable bmi is the passed to the fundtion checkBmi which prints out its result.
+- The programme then applies the standard bmi formula shown above to those variables and stores that value in the variable **bmi**
+- The variable bmi is the passed to the function checkBmi which prints out its result.
 
 # 2. revString.py
 
@@ -37,11 +37,11 @@ Table of contents
 # 3. collatz.py
 [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
 
-*collatz.py takes an input of any positive interger from the user and performs the collatz process (linked above) of dividing the value by two if it is **even** but if the value is **odd**, multiplying it by three and adding one. As the process executes the programme prints each new value to the screen until it reaches 1 and the programme finishes* 
+*collatz.py takes an input of any positive integer from the user and performs the collatz process (linked above) of dividing the value by two if it is **even** but if the value is **odd**, multiplying it by three and adding one. As the process executes the programme prints each new value to the screen until it reaches 1 and the programme finishes* 
 
-- The programme starts with a **try/except** block to make sure the user enters a correct interger value. If the value is not an interger the programme prints an exception message to the screen.
+- The programme starts with a **try/except** block to make sure the user enters a correct integer value. If the value is not an integer the programme prints an exception message to the screen.
 - The programme then takes an input from the user and then checks to make sure it is a positive number, If the number is negative a message will print to the screen and the programme will end.
-- The original value is printed to the screen before any calculations are done. The print statement uses a second argumanet **end=" "** so the programme will not automatically insert newline chrachters and instead will print all values on the same line.
+- The original value is printed to the screen before any calculations are done. The print statement uses a second argument **end=" "** so the programme will not automatically insert newline characters and instead will print all values on the same line.
 - The programme then performs a different calculation whether the number is even or odd.
 - A while loop ensures the programme will continue to run provided the number remains not equal to one.
 - The programme then checks for odd or evenness and applies the correct action to the number depending on the result.
@@ -53,17 +53,17 @@ Table of contents
 *This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.*
 
 - The programme begins by importing the **datetime** module.
-- The programme creates a variable **day** for todays day index using datetime's **now() and weekday()** methods.
-- A list **days** is created of all the days of the week in order Mon-Sun.
+- The programme creates a variable **day** for today's day index using datetime's **now() and weekday()** methods.
+- A list named **days** is created of all the days of the week in order Mon-Sun.
 - The programme then checks the index of today to determine if it's a weekday or not and prints an appropriate message depending on the result.
 
 # 5. sqroot.py
 [newtons square root method](https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf)
 <img src="https://github.com/cian-gmit-da2020/PandS-Weekly-Projects/blob/master/Square%20root%20equation.png?raw=true">
 
-*sqroot.py takes any floating point number as an input and calculates an approximation of that input value's square root. Then it prints that square root value to the screen, rounded to 2 decimal points.*
+*sqroot.py takes any floating-point number as an input and calculates an approximation of that input value's square root. Then it prints that square root value to the screen, rounded to 2 decimal points.*
 
-- This programme starts by defining a funtion **sroot()** with input variable **X**. The function the estimates the square root of the input **X**.
+- This programme starts by defining a function **sroot()** with input variable **X**. The function the estimates the square root of the input **X**.
 - The function uses an infinite loop with break statements that end the loop at certain points when certain conditions have been met
 - First the function finds the closest whole root number to the input value.
 - The function initialises a counter variable named **count**.
@@ -72,7 +72,7 @@ Table of contents
 - If count<sup>2</sup> is greater than X then we know the square root of X is between count and count - 1.
 - The value of count is assigned to the variable **root**.
 - A while loop ensure that the next section of code will continue until root<sup>2</sup> is equal to X, *within two decimal places*.
-- Then the function uses Newton's square root method, above, to get a much closer approximation of the square root value and returns that value ending the fuction.
+- Then the function uses **Newton's square root method**, above, to get a much closer approximation of the square root value and returns that value ending the function.
 - The second half of the programme takes input from the user and returns a square root value.
 - The programme starts with a **try/except** block to make sure the user enters a correct numerical value. If the value is not a number the programme prints an exception message to the screen.
 - The programme asks the user for an input value to calculate the square root of, and assigns it to the variable **i**
@@ -88,21 +88,21 @@ Table of contents
 - The programme uses a **try/except** block to make sure to check the users arguments are correct. If the user doesn't enter enough arguments for the programme to function a specific message will print to the screen. If there are enough arguments but there is any issues with the filename or the file doesn't exist a specific message will print to the screen. 
 - The next a variable **fname** is initiallised and it is assigned the string value of the second item in the list **sys.argv** as its value.
 - The programme sets the search variable **letter** to default **e**.
-- The programme checks to see if the user has entered a third command line argument and if that argument is a single charachter then it updates the search letter variable to the third argument.
-- Using a **with** block, the programme opens the file **fname**. A counter variable **count** is initiallised and its value set to 0.
+- The programme checks to see if the user has entered a third command line argument and if that argument is a single character then it updates the search letter variable to the third argument.
+- Using a **with** block, the programme opens the file **fname**. A counter variable **count** is initialised and its value set to 0.
 - The programme then iterates over every character in each line. If the value in **letter** appears, the count is incremented by 1.
 - When the programme has gone through the entire file it prints a formatted string to the screen containing the results of the search.
 
 # 7. plotty.py 
 
-*This programme plots 3 seperate functions of **X** on a single plot.*
+*This programme plots 3 separate functions of **X** on a single plot.*
 **f(x) = x**, **g(x) = x<sup>2</sup>** and **h(x) = x<sup>3</sup>**
 
 - The programme starts by importing the **numpy** and **matplotlib's pyplot** modules.
 - Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**.
 - Using linspace allows for a smoother graph that more accurately mirrors the actual functions.
-- Using pyplot method **subplots()** the programme intiiallises the variables **fig and ax** which are the plot **Figure and Axes objects**. 
-- The programme creates 3 seperate line plots on the same Axes, ax. One plot for each function f(x),g(x) and h(x) and assigns a colour and label to each plot.
+- Using pyplot method **subplots()** the programme initialises the variables **fig and ax** which are the plot **Figure and Axes objects**. 
+- The programme creates 3 separate line plots on the same Axes, ax. One plot for each function f(x),g(x) and h(x) and assigns a colour and label to each plot.
 - The programme adds a label to the x & y axis, a legend, a grid and a title for the plot ax.
 - The **fig.show()** method displays the plot to the screen.
 - A final **input()** call is added to keep the programme running while the plot is displayed on the screen. The programme will only close if the user enters an input to the command line.
