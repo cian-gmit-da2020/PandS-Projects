@@ -52,7 +52,7 @@ Table of contents
 
 *This programme uses the datetime module to check the current day of the week and prints different message to the screen if its a weekday or a weekend.*
 
-- The programme begins by importing the **datetime** module.
+- The programme begins by importing the **[datetime](https://docs.python.org/3/library/datetime.html)** module.
 - The programme creates a variable **day** for today's day index using datetime's **now() and weekday()** methods.
 - A list named **days** is created of all the days of the week in order Mon-Sun.
 - The programme then checks the index of today to determine if it's a weekday or not and prints an appropriate message depending on the result.
@@ -84,7 +84,7 @@ Table of contents
 
 *This programme uses command line arguments to open and read a file and return a count of characters in the file.*
 
-- The programme starts by importing the **sys** module.
+- The programme starts by importing the **[sys](https://docs.python.org/3/library/sys.html?highlight=sys#module-sys)** module.
 - The programme uses a **try/except** block to make sure to check the users arguments are correct. If the user doesn't enter enough arguments for the programme to function a specific message will print to the screen. If there are enough arguments but there is any issues with the filename or the file doesn't exist a specific message will print to the screen. 
 - The next a variable **fname** is initiallised and it is assigned the string value of the second item in the list **sys.argv** as its value.
 - The programme sets the search variable **letter** to default **e**.
@@ -98,7 +98,7 @@ Table of contents
 *This programme plots 3 separate functions of **X** on a single plot.*
 **f(x) = x**, **g(x) = x<sup>2</sup>** and **h(x) = x<sup>3</sup>**
 
-- The programme starts by importing the **numpy** and **matplotlib's pyplot** modules.
+- The programme starts by importing the **[numpy](https://numpy.org/)** and **[matplotlib](https://matplotlib.org/)'s pyplot** modules.
 - Using numpy's **linspace** method the programme creates an array of 100 equally spaced values between **0** and **4**.
 - Using linspace allows for a smoother graph that more accurately mirrors the actual functions.
 - Using pyplot method **subplots()** the programme initialises the variables **fig and ax** which are the plot **Figure and Axes objects**. 
